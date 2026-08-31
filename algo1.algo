@@ -1,0 +1,24 @@
+ALGORITHM sentence
+VAR
+    s:STRING ;
+    c: caractère ;
+    v,w:INTEGER; 
+BEGIN
+    c:=0
+    v:=0
+    w:=0
+    read(s)
+    WHILE (s≠ .) DO
+        c:=c+1
+        IF (w="") THEN
+            w:=w+1
+         END_IF
+        IF (c:="a"or c="e"or c:="o"or c:="u"orc:="i") THEN
+            v:=v+ 
+        END_IF
+        read(s)
+    END_WHILE
+    write("Length= ", c)
+    Write("Number of words = ", w)
+    Write("Number of vowels = ", v)
+END
