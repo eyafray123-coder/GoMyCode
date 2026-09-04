@@ -1,0 +1,34 @@
+Algorithm Orthogonal_Vectors
+
+Variables:
+    V1, V2 : arrays of real
+    n, p, i : integer
+    ps : real
+
+Begin
+
+    Read n        
+
+    For p ← 1 to n do
+
+        Read size
+
+        For i ← 0 to size-1 do
+            Read V1[i]
+        EndFor
+
+        For i ← 0 to size-1 do
+            Read V2[i]
+        EndFor
+
+        ps ← Dot_Product(V1, V2, size)
+
+        If ps = 0 Then
+            Write "The vectors are orthogonal"
+        Else
+            Write "The vectors are not orthogonal"
+        EndIf
+
+    EndFor
+
+End
