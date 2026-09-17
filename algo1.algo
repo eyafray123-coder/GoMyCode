@@ -1,52 +1,24 @@
-Algorithm SumDistinct
-
-Variables:
-    A, B : arrays of integers
-    n, m, i, j : integer
-    sum : integer
-    found : boolean
-
-Begin
-    Read n
-    For i ← 0 to n-1 do
-        Read A[i]
-    EndFor
-
-    Read m
-    For i ← 0 to m-1 do
-        Read B[i]
-    EndFor
-
-    sum ← 0
-
-    
-    For i ← 0 to n-1 do
-        found ← False
-
-        For j ← 0 to m-1 do
-            If A[i] = B[j] Then
-                found ← True
-            EndIf
-        EndFor
-
-        If found = False Then
-            sum ← sum + A[i]
-        EndIf
-    EndFor
-    For i ← 0 to m-1 do
-        found ← False
-
-        For j ← 0 to n-1 do
-            If B[i] = A[j] Then
-                found ← True
-            EndIf
-        EndFor
-
-        If found = False Then
-            sum ← sum + B[i]
-        EndIf
-    EndFor
-
-    Write "Sum = ", sum
-
-End
+ALGORITHM sentence
+VAR
+    s:STRING ;
+    c: caractère ;
+    v,w:INTEGER; 
+BEGIN
+    c:=0
+    v:=0
+    w:=0
+    read(s)
+    WHILE (s≠ .) DO
+        c:=c+1
+        IF (w="") THEN
+            w:=w+1
+         END_IF
+        IF (c:="a"or c="e"or c:="o"or c:="u"orc:="i") THEN
+            v:=v+ 
+        END_IF
+        read(s)
+    END_WHILE
+    write("Length= ", c)
+    Write("Number of words = ", w)
+    Write("Number of vowels = ", v)
+END
